@@ -13,6 +13,8 @@ import lombok.Setter;
 @Setter
 public class MediumFileContentJpaId implements Serializable {
 
+    private static final long serialVersionUID = -1710555467685181030L;
+
     private String mediumId;
 
     private String fileId;

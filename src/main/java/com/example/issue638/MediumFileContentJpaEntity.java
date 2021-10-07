@@ -9,9 +9,13 @@ import org.springframework.content.commons.annotations.ContentLength;
 import org.springframework.content.commons.annotations.MimeType;
 
 import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Getter
+@Setter
+@ToString
 public class MediumFileContentJpaEntity  {
 
     @EmbeddedId
@@ -27,5 +31,5 @@ public class MediumFileContentJpaEntity  {
 
     @MimeType
     @Column(name = "mime_type")
-    private String mimeType = "video/mp4";
+    private String mimeType = "text/plain";
 }
